@@ -1,1 +1,11 @@
-# asm_alu
+# About Arithmetic Logic Unit (ALU)
+My project outlines the creation and execution for fundamental arithmetic operations within an Arithmetic Logic Unit (ALU), all achieved through the application of logic gates. It delves into the foundational aspects of a computer, focusing on logic operations and circuits critical for modern computer systems. Through the creation of a basic calculator using MIPS, I designed logic circuits for addition, subtraction, multiplication, and division. The project explores two approaches: utilizing MIPS arithmetic instructions and employing exclusive logical operators. I created the MIPS code on the MARS simulator. 
+
+## Requirements
+To execute this project correctly, one must download and configure the MARS simulator. Upon setting up MARS, they should download and extract CS47Project1.zip, resulting in a folder containing six files.Upon opening these files in the MARS simulator, navigate to the settings tab and enable 'Assembles all files in directory' and 'Initialize program counter to global main if defined.' Subsequently, assemble proj_auto_test.asm and execute the program. Although it is permissible for users to utilize standard MIPS mathematical operations in alu_normal, they are explicitly prohibited from employing such operations in alu_logical.
+
+## Implementation
+In crafting and implementing the ALU, three critical parameters come into play: $a0, $a1, and $a2. The first two are registers for computing mathematical expressions. $a2 holds the operation code in ASCII format, specifying the desired mathematical operation. The outcomes of these operations are stored in $v0 and $v1. The four main built-in MIPS instructions we will employ for this section include ‘add,’ ‘sub,’ ‘mult,’ and ‘div,’ each used for their respective mathematical operations.
+
+## Testing
+To verify the functionality of their implementation, users are instructed to save all modified files and assemble the files within the ZIP file. To determine if the operations are performing successfully, one must use the run function and go through the tests. A correct implementation is indicated by all 40 test cases passed, as well as matching successfully, one must use the run function and go through the tests. A correct implementation is indicated by all 40 test cases passing.
